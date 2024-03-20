@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project xmlns:con="http://eviware.com/soapui/config" id="333b3b92-bc99-4628-afcb-90672b2992ea" created="2.7.0" activeEnvironment="LocalEnv" name="EventHandlers Sample Project" resourceRoot="" updated="3.51.0" encryptionMode="Not encrypted" projectVersion="" runType="SEQUENTIAL" compositeProjectFormat="1.3">
+  <con:description>Sample Projects bases on a virtualized REST service. Please make sure that port 8084 is available on your local machine or you can update the virtual API under the serviceV tool to reflect an open port on your system. You will also have to update the ports on the tests to reflect
+the same ports on the virtual service.
+
+NOTE: Project modified to show use of EventHandlers.
+Test Cases will disable/enable depending on set enviroment</con:description>
+  <con:settings>
+    <con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.ProTestRunnerUIAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Settings File Password" value=""/>
+  <con:entry key="Report Format(s)" value="PDF"/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="Export JUnit Results" value="true"/>
+  <con:entry key="Export All" value="true"/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Slack Channel(s)" value=""/>
+  <con:entry key="Add Settings" value="true"/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="Endpoint" value=""/>
+  <con:entry key="Test Suite Tags" value=""/>
+  <con:entry key="Select Report Type" value="Project printable report"/>
+  <con:entry key="System Properties" value="
+"/>
+  <con:entry key="Test Suite" value="&lt;all>"/>
+  <con:entry key="Run in-process" value="false"/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="Print Report" value="true"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Test Case Tags" value=""/>
+  <con:entry key="Export JUnit Results with test properties" value="false"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Test Case" value="&lt;all>"/>
+  <con:entry key="Slack Access Token" value=""/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="TestRunner Path" value="C:\Program Files\SmartBear\ReadyAPI-3.50.0\bin"/>
+  <con:entry key="Environment" value="Env Test"/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="Root Folder" value="C:\Users\dawid.kaminski\Documents\ReadyAPI Projects\Reports"/>
+  <con:entry key="Ignore Errors" value="true"/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Save Project" value="false"/>
+</xml-fragment>]]></con:setting>
+    <con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.ProTestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Settings File Password" value=""/>
+  <con:entry key="Report Format(s)" value="XML"/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="Export JUnit Results" value="false"/>
+  <con:entry key="Export All" value="true"/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Slack Channel(s)" value=""/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="Endpoint" value=""/>
+  <con:entry key="Test Suite Tags" value=""/>
+  <con:entry key="Select Report Type" value="Test suite printable report"/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Test Suite" value="REST Test Suite 1"/>
+  <con:entry key="Run in-process" value="false"/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="Print Report" value="true"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Test Case Tags" value=""/>
+  <con:entry key="Export JUnit Results with test properties" value="true"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Test Case" value="&lt;all>"/>
+  <con:entry key="Slack Access Token" value=""/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="TestRunner Path" value="C:\Program Files\SmartBear\ReadyAPI-3.50.0\bin"/>
+  <con:entry key="Environment" value="Env Test"/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="Root Folder" value="C:\Users\dawid.kaminski\Downloads\Test Report"/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Save Project" value="false"/>
+</xml-fragment>]]></con:setting>
+    <con:setting id="333b3b92-bc99-4628-afcb-90672b2992eafileName">REST-Sample-Project-readyapi-project</con:setting>
+    <con:setting id="IncludeOverview">true</con:setting>
+    <con:setting id="IncludeResults">true</con:setting>
+    <con:setting id="FlowLayout">false</con:setting>
+    <con:setting id="ErrorDetails">true</con:setting>
+    <con:setting id="IncludeCoverage">true</con:setting>
+    <con:setting id="GeneratableJUnitReport@Style">Single Page (Print)</con:setting>
+    <con:setting id="GeneratableJUnitReport@Folder">C:\Example\Nesspresso</con:setting>
+    <con:setting id="GeneratableJUnitReport@Modify">false</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:requirements/>
+  <con:properties/>
+  <con:wssContainer/>
+  <con:databaseConnectionContainer/>
+  <con:jmsConnectionContainer/>
+  <con:oAuth2ProfileContainer/>
+  <con:oAuth1ProfileContainer/>
+  <con:eventHandlers type="TestSuiteRunListener.beforeRun" name="TestSuite initialized/not-started;  TestCase not-initialized/not-started">
+    <con:script disabled="true">def env = testRunner.testSuite.project.getActiveEnvironment().getName() 
+	
+log.info("Script run when TestSuite is called and running but before TestCase is called and start running (TEST SIUTE LEVEL) Active Environment: " + env)
+	
+	if (env == "LocalEnvQuick"  || env == "RemoteAPIEnvQuick") {
+		testRunner.testSuite.getTestCaseByName( "Testcase 1" ).disabled = true
+		testRunner.testSuite.getTestCaseByName( "Testcase 2" ).disabled = true
+	}
+	else{		
+		testRunner.testSuite.getTestCaseByName( "Testcase 1" ).disabled = false
+		testRunner.testSuite.getTestCaseByName( "Testcase 2" ).disabled = false
+}</con:script>
+  </con:eventHandlers>
+  <con:eventHandlers type="TestSuiteRunListener.beforeTestCase" name="TestSuite initialized/started;  TestCase initialieze/not-started">
+    <con:script disabled="true">def env = testRunner.testSuite.project.getActiveEnvironment().getName() 
+
+log.info("Script run when TestSuite is called and running but before TestCase is called and start running (TEST SIUTE LEVEL) Active Environment: " + env)
+	
+	if (env == "LocalEnvQuick"  || env == "RemoteAPIEnvQuick") {
+		testRunner.testSuite.getTestCaseByName( "Testcase 1" ).disabled = true
+		testRunner.testSuite.getTestCaseByName( "Testcase 2" ).disabled = true
+	}
+	else{
+		testRunner.testSuite.getTestCaseByName( "Testcase 1" ).disabled = false
+		testRunner.testSuite.getTestCaseByName( "Testcase 2" ).disabled = false</con:script>
+  </con:eventHandlers>
+  <con:eventHandlers type="TestRunListener.beforeRun" name="TestSuite initialized/started;  TestCase initialized/not-started">
+    <con:script disabled="false">def env = testRunner.testCase.testSuite.project.getActiveEnvironment().getName() 
+def tCase = testRunner.testCase.getName() //To display TestCase name
+
+log.info("[TestCase Scope lvl] Script run when TestCase is initialized but before Test Case"+ tCase +" start.  Currently Active Environment: " + env)
+	
+	if (env == "LocalEnvQuick" || env == "RemoteAPIEnvQuick") {
+		testRunner.testCase.testSuite.getTestCaseByName( "Testcase 1" ).disabled = true
+		testRunner.testCase.testSuite.getTestCaseByName( "Testcase 2" ).disabled = true
+	}
+	else{
+		testRunner.testCase.testSuite.getTestCaseByName( "Testcase 1" ).disabled = false
+		testRunner.testCase.testSuite.getTestCaseByName( "Testcase 2" ).disabled = false
+	}</con:script>
+  </con:eventHandlers>
+  <con:eventHandlers type="ProjectRunListener.afterRun" name="Log Suites/Cases/Steps with expected Status">
+    <con:script disabled="true">// Create EventListner "ProjectRunListener.afterRun" (script will execute only if whole project is run) and add following script code:
+def testSuites
+def testCases
+def testSteps
+
+def expectedStatus = "PASS"
+
+//Iterates and checks TestSuite statuses 
+testSuites = projectRunner.getResults()
+testSuites.each() {
+	if(it.getStatus().toString()==expectedStatus) log.info "__TestSuite '" + it.getTestSuite().getName() + "' status: " + it.getStatus().toString() + "..." + it.getTimeTaken() + " ms"
+	//Iterates and checks TestCase statuses 
+    testCases = it.getResults()
+	testCases.each() {
+		if(it.getStatus().toString()==expectedStatus) log.info "   __ TestCase '" + it.getTestCase().getName() + "' status: " + it.getStatus().toString() + "..." + it.getTimeTaken() + " ms"
+		//Iterates and checks TestStep statuses
+        testSteps =it.getResults()
+		testSteps.each() {
+			if(it.getStatus().toString()==expectedStatus) log.info "        __ TestStep '" + it.getTestStep().getName() + "' status: " + it.getStatus().toString() + "..." + it.getTimeTaken() + " ms"
+			}
+	}
+}</con:script>
+  </con:eventHandlers>
+  <con:eventHandlers type="TestRunListener.beforeRun" name="Disable VirtTestSteps TestCase scope">
+    <con:script disabled="true">// When script is executed with "TestEngine Env" or "RemoteAPI Env" disables VirtServer action TestSteps
+def env = testRunner.testCase.testSuite.project.getActiveEnvironment().getName() 
+	
+log.info("[TestCase Scope level] Script run when TestCase is initialized but before it start. Currently Active Environment: " + env)
+	
+	if (env == "RemoteAPIEnv" || env == "RemoteAPIEnvQuick") {
+		testRunner.testCase.getTestStepByName("Start Service").disabled = true
+		testRunner.testCase.getTestStepByName("Stop Service").disabled = true
+	}
+	else{
+		testRunner.testCase.getTestStepByName("Start Service").disabled = false
+		testRunner.testCase.getTestStepByName("Stop Service").disabled = false
+	}</con:script>
+  </con:eventHandlers>
+  <con:eventHandlers type="TestSuiteRunListener.beforeRun" name="Disable VirtTestSteps TestSuite scope">
+    <con:script disabled="false">def env = testRunner.testSuite.project.getActiveEnvironment().getName() 
+	
+log.info("Script run when TestSuite is called and running but before TestCase is called and start running (TEST SIUTE LEVEL) Active Environment: " + env)
+	
+	if (env == "RemoteAPIEnv" || env == "RemoteAPIEnvQuick") {
+		testRunner.testSuite.getTestCaseByName( "Testcase 0" ).getTestStepByName("Start Service").disabled = true
+		testRunner.testSuite.getTestCaseByName( "Testcase 0" ).getTestStepByName("Stop Service").disabled = true
+		testRunner.testSuite.getTestCaseByName( "Testcase 1" ).getTestStepByName("Start Service").disabled = true
+		testRunner.testSuite.getTestCaseByName( "Testcase 1" ).getTestStepByName("Stop Service").disabled = true
+		testRunner.testSuite.getTestCaseByName( "Testcase 2" ).getTestStepByName("Start Service").disabled = true
+		testRunner.testSuite.getTestCaseByName( "Testcase 2" ).getTestStepByName("Stop Service").disabled = true
+	}
+	else{		
+		testRunner.testSuite.getTestCaseByName( "Testcase 0" ).getTestStepByName("Start Service").disabled = false
+		testRunner.testSuite.getTestCaseByName( "Testcase 0" ).getTestStepByName("Stop Service").disabled = false
+		testRunner.testSuite.getTestCaseByName( "Testcase 1" ).getTestStepByName("Start Service").disabled = false
+		testRunner.testSuite.getTestCaseByName( "Testcase 1" ).getTestStepByName("Stop Service").disabled = false
+		testRunner.testSuite.getTestCaseByName( "Testcase 2" ).getTestStepByName("Start Service").disabled = false
+		testRunner.testSuite.getTestCaseByName( "Testcase 2" ).getTestStepByName("Stop Service").disabled = false
+	}</con:script>
+  </con:eventHandlers>
+  <con:environment id="dd67cd3f-4705-4b19-80cc-1b30e0342ec3" name="LocalEnv" index="0">
+    <con:service type="REST" name="Ecommerce">
+      <con:endpoint authProfile="No Authorization" proxyHost="" proxyPort="" proxyUsername="" proxyPassword="" areGlobalProxySettingsIgnored="false">http://localhost:8001</con:endpoint>
+    </con:service>
+    <con:property>
+      <con:name/>
+      <con:value/>
+    </con:property>
+    <con:databaseConnectionContainer/>
+    <con:jmsConnectionContainer/>
+  </con:environment>
+  <con:environment id="a2037434-16a5-401c-9760-eccad6c636f9" name="LocalEnvQuick" index="1">
+    <con:service type="REST" name="Ecommerce">
+      <con:endpoint authProfile="No Authorization" proxyHost="" proxyPort="" proxyUsername="" proxyPassword="" areGlobalProxySettingsIgnored="false">http://localhost:8001</con:endpoint>
+    </con:service>
+    <con:property>
+      <con:name/>
+      <con:value/>
+    </con:property>
+    <con:databaseConnectionContainer/>
+    <con:jmsConnectionContainer/>
+  </con:environment>
+  <con:environment id="5e39c00c-ade3-4674-b941-d45d063d02d1" name="RemoteAPIEnv" index="2">
+    <con:service type="REST" name="Ecommerce">
+      <con:endpoint authProfile="No Authorization" proxyHost="" proxyPort="" proxyUsername="" proxyPassword="">http://localhost:8001</con:endpoint>
+    </con:service>
+    <con:databaseConnectionContainer/>
+    <con:jmsConnectionContainer/>
+  </con:environment>
+  <con:environment id="ad05c9a8-0e25-4a69-bc2a-07492ce170d3" name="RemoteAPIEnvQuick" index="3">
+    <con:service type="REST" name="Ecommerce">
+      <con:endpoint authProfile="No Authorization" proxyHost="" proxyPort="" proxyUsername="" proxyPassword="">http://localhost:8001</con:endpoint>
+    </con:service>
+    <con:databaseConnectionContainer/>
+    <con:jmsConnectionContainer/>
+  </con:environment>
+  <con:virtServer>
+    <con:name>DockerVirt</con:name>
+    <con:url>https://localhost:9090</con:url>
+  </con:virtServer>
+  <con:authRepository/>
+  <con:environmentSpec>
+    <con:entry environmentId="dd67cd3f-4705-4b19-80cc-1b30e0342ec3">
+      <con:authProfile>No Authorization</con:authProfile>
+    </con:entry>
+    <con:entry environmentId="a2037434-16a5-401c-9760-eccad6c636f9">
+      <con:authProfile>No Authorization</con:authProfile>
+    </con:entry>
+    <con:entry environmentId="5e39c00c-ade3-4674-b941-d45d063d02d1">
+      <con:authProfile>No Authorization</con:authProfile>
+    </con:entry>
+    <con:entry environmentId="ad05c9a8-0e25-4a69-bc2a-07492ce170d3">
+      <con:authProfile>No Authorization</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+  <con:tags/>
+</con:soapui-project>

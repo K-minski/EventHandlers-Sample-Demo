@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite xmlns:con="http://eviware.com/soapui/config" id="2b01e2fe-d877-4a6c-903c-f2b989051b71" name="RESTful Test Suite">
+  <con:settings id="fd89038e-515e-424e-9651-11835e81cc64">
+    <con:setting id="d4b194ea-9025-4d1a-bf69-3e4acd860e62fileName">Sample-REST-Test-Suite</con:setting>
+    <con:setting id="IncludeOverview">true</con:setting>
+    <con:setting id="IncludeResults">true</con:setting>
+    <con:setting id="FlowLayout">false</con:setting>
+    <con:setting id="ErrorDetails">true</con:setting>
+    <con:setting id="IncludeCoverage">true</con:setting>
+    <con:setting id="54b8da3c-5fb2-40cc-ac28-5bf65f669736fileName">Sample-REST-Test-Suite-3</con:setting>
+    <con:setting id="2b01e2fe-d877-4a6c-903c-f2b989051b71fileName">RESTful-Test-Suite</con:setting>
+    <con:setting id="GeneratableJUnitReport@Style">Single Page (Print)</con:setting>
+    <con:setting id="GeneratableJUnitReport@Folder">C:\Example\TE</con:setting>
+    <con:setting id="GeneratableJUnitReport@Modify">false</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:runType>SEQUENTIAL</con:runType>
+  <con:properties>
+    <con:property>
+      <con:name>test</con:name>
+      <con:value>rest</con:value>
+    </con:property>
+  </con:properties>
+  <con:setupScript></con:setupScript>
+  <con:reportScript/>
+  <con:reportParameters/>
+  <con:environmentSpec>
+    <con:entry environmentId="dd67cd3f-4705-4b19-80cc-1b30e0342ec3">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+    <con:entry environmentId="a2037434-16a5-401c-9760-eccad6c636f9">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+    <con:entry environmentId="5e39c00c-ade3-4674-b941-d45d063d02d1">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+    <con:entry environmentId="ad05c9a8-0e25-4a69-bc2a-07492ce170d3">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:testSuite>
