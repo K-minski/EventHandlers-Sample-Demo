@@ -20,7 +20,7 @@ NOTE: Check the Test Case transaction log after the execution of the test to vie
     <con:setting id="GeneratableJUnitReport@Modify">false</con:setting>
   </con:settings>
   <con:savedRecentRuns>1</con:savedRecentRuns>
-  <con:testStep type="VirtRunnerTestStep" name="Start Service" id="daed290b-5991-4933-ad9b-c9e436d2bac3">
+  <con:testStep type="VirtRunnerTestStep" name="Start Service" id="daed290b-5991-4933-ad9b-c9e436d2bac3" disabled="true">
     <con:settings/>
     <con:config>
       <url>localhost</url>
@@ -311,7 +311,7 @@ return ouptutFileName;
       <discardResults>false</discardResults>
     </con:config>
   </con:testStep>
-  <con:testStep type="VirtRunnerTestStep" name="Stop Service" id="6543b4d3-709e-4d39-902a-2a84defddccd">
+  <con:testStep type="VirtRunnerTestStep" name="Stop Service" id="6543b4d3-709e-4d39-902a-2a84defddccd" disabled="true">
     <con:settings/>
     <con:config>
       <url>localhost</url>
@@ -353,4 +353,6 @@ return ouptutFileName;
       <con:authProfile>Inherit From Parent</con:authProfile>
     </con:entry>
   </con:environmentSpec>
+  <con:tagId>29c14795-e647-4be3-8518-6034d0535296</con:tagId>
+  <con:tagId>6cd29510-5ce3-40dd-abaa-29d1d2032850</con:tagId>
 </con:testCase>

@@ -33,7 +33,7 @@ log.info(" [TEST STEP LEVEL] Script executed form Test Step when Test Case is in
 }</script>
     </con:config>
   </con:testStep>
-  <con:testStep type="VirtRunnerTestStep" name="Start Service" id="6ce61dfd-d4d5-40c5-b36e-16c999185549">
+  <con:testStep type="VirtRunnerTestStep" name="Start Service" id="6ce61dfd-d4d5-40c5-b36e-16c999185549" disabled="true">
     <con:settings/>
     <con:config>
       <url>localhost</url>
@@ -67,7 +67,7 @@ log.info(" [TEST STEP LEVEL] Script executed form Test Step when Test Case is in
       </con:restRequest>
     </con:config>
   </con:testStep>
-  <con:testStep type="VirtRunnerTestStep" name="Stop Service" id="c9032df6-709d-45bb-8e87-ae1d85527cf6">
+  <con:testStep type="VirtRunnerTestStep" name="Stop Service" id="c9032df6-709d-45bb-8e87-ae1d85527cf6" disabled="true">
     <con:settings/>
     <con:config>
       <url>localhost</url>
@@ -93,6 +93,26 @@ log.info(" [TEST STEP LEVEL] Script executed form Test Step when Test Case is in
     <con:status>NONE</con:status>
     <con:properties/>
   </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>441de869-93f0-48ed-9c78-e254cc153d02</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>6ce61dfd-d4d5-40c5-b36e-16c999185549</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>618b422f-fd58-4f7a-b4e0-06ed0d5dacca</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>c9032df6-709d-45bb-8e87-ae1d85527cf6</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
   <con:environmentSpec>
     <con:entry environmentId="dd67cd3f-4705-4b19-80cc-1b30e0342ec3">
       <con:authProfile>Inherit From Parent</con:authProfile>
@@ -107,4 +127,7 @@ log.info(" [TEST STEP LEVEL] Script executed form Test Step when Test Case is in
       <con:authProfile>Inherit From Parent</con:authProfile>
     </con:entry>
   </con:environmentSpec>
+  <con:tagId>84f865ae-eba2-4128-af6f-51c33f4a0589</con:tagId>
+  <con:tagId>da56ee77-7e29-403e-84ba-4cc4d5c2bb5b</con:tagId>
+  <con:tagId>29c14795-e647-4be3-8518-6034d0535296</con:tagId>
 </con:testCase>

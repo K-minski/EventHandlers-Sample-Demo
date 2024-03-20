@@ -19,7 +19,7 @@ NOTE: If you would like to run the Login step without as a standalone step pleas
     <con:setting id="FlowLayout">false</con:setting>
   </con:settings>
   <con:savedRecentRuns>1</con:savedRecentRuns>
-  <con:testStep type="VirtRunnerTestStep" name="Start Service" id="2e88744f-54d7-4c0d-8c6d-6fb5c2bea0de">
+  <con:testStep type="VirtRunnerTestStep" name="Start Service" id="2e88744f-54d7-4c0d-8c6d-6fb5c2bea0de" disabled="true">
     <con:settings/>
     <con:config>
       <url>localhost</url>
@@ -324,7 +324,7 @@ NOTE: If you would like to run the Login step without as a standalone step pleas
       </con:restRequest>
     </con:config>
   </con:testStep>
-  <con:testStep type="VirtRunnerTestStep" name="Stop Service" id="6baf532e-3a4c-4002-b7d2-096a8586c26b">
+  <con:testStep type="VirtRunnerTestStep" name="Stop Service" id="6baf532e-3a4c-4002-b7d2-096a8586c26b" disabled="true">
     <con:settings/>
     <con:config>
       <url>localhost</url>
@@ -353,4 +353,6 @@ NOTE: If you would like to run the Login step without as a standalone step pleas
       <con:authProfile>Inherit From Parent</con:authProfile>
     </con:entry>
   </con:environmentSpec>
+  <con:tagId>29c14795-e647-4be3-8518-6034d0535296</con:tagId>
+  <con:tagId>da56ee77-7e29-403e-84ba-4cc4d5c2bb5b</con:tagId>
 </con:testCase>
