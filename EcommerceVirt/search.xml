@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:restMockAction xmlns:con="http://eviware.com/soapui/config" name="search" method="GET" resourcePath="/search" id="726d9607-d507-4c87-930f-ed674247a767">
+<con:restMockAction xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="search" method="GET" resourcePath="/search" id="726d9607-d507-4c87-930f-ed674247a767">
   <con:settings id="f93401da-2fd4-4df9-999b-dad1fe215185">
     <con:setting id="92956b11-db13-4f2a-90f3-f11bc6a1950bfileName">search</con:setting>
     <con:setting id="726d9607-d507-4c87-930f-ed674247a767fileName">search</con:setting>
@@ -52,6 +52,7 @@ return "Search Response"</con:dispatchPath>
   <con:dispatchXPath/>
   <con:parameterDispatcherRuleContainer/>
   <con:routeScript/>
+  <con:requestRouteScript/>
   <con:response name="Search Response" id="41e68c78-6373-4c24-aaf9-80d73863f033" httpResponseStatus="200" mediaType="application/json" dataSource="">
     <con:settings/>
     <con:responseContent>{

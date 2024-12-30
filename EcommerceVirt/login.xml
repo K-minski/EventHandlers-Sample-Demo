@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:restMockAction xmlns:con="http://eviware.com/soapui/config" name="login" method="GET" resourcePath="/login" id="4077dc9c-a527-48c0-95c5-60e8836de5f7">
+<con:restMockAction xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="login" method="GET" resourcePath="/login" id="4077dc9c-a527-48c0-95c5-60e8836de5f7">
   <con:settings id="f6748295-c4c1-4a5a-a4d0-d63d1419ce2d">
     <con:setting id="82d0d51b-1cc5-4a16-835e-f1da0547efbdfileName">login</con:setting>
     <con:setting id="4077dc9c-a527-48c0-95c5-60e8836de5f7fileName">login</con:setting>
@@ -44,6 +44,7 @@ return "Ok Response"</con:dispatchPath>
   <con:dispatchXPath/>
   <con:parameterDispatcherRuleContainer/>
   <con:routeScript/>
+  <con:requestRouteScript/>
   <con:response name="OK Response" id="161c44cd-4fd1-4ac7-8109-5ea3359c43e8" httpResponseStatus="200" mediaType="application/json" dataSource="">
     <con:settings/>
     <con:responseContent>{ "sessionid" : "${sessionid}" }</con:responseContent>
